@@ -1,0 +1,172 @@
+# Sober Today – full website text
+
+> A tool for reflection, inspiration and sober days. Free, with no registration or tracking.
+
+Website: https://sobertoday.eu/
+Updated: 2026-10-19
+Short page overview: https://sobertoday.eu/llms.txt
+Sitemap: https://sobertoday.eu/sitemap.xml
+
+This file collects the text from the information pages and describes the interactive features. Personal history, notes and other user data are not included.
+
+## Storage and availability
+
+Mood history, notes, the start date and a personal motivation message are stored in localStorage in the user's browser. Data does not automatically sync between devices or browsers. JSON backups can be exported and imported from Settings.
+
+The contact form on the About page is separate from the local journal. Submitting the form sends a name or nickname and a message to the server. The submission is stored together with a timestamp, IP address and browser information. The form has a spam filter and a limit of three submissions per IP address per day.
+
+The website uses HTML, CSS and JavaScript, with PHP for the contact form. A service worker caches selected pages for offline use. Submitting the contact form requires an internet connection.
+
+## Home / Check-in
+
+Source: https://sobertoday.eu/
+
+The home page asks "How are you feeling today?" The user chooses one of five mood expressions and can write an optional note about what alcohol-free days mean to them. "Check in" saves the entry locally and opens My page. If today's check-in has already been recorded, My page opens automatically.
+
+The history shows earlier check-ins and notes, with pagination and the option to star entries.
+
+## My page
+
+Source: https://sobertoday.eu/dashboard.html
+
+On the first visit, the user chooses the date and time their sober period starts. They can choose an earlier date or plan a start date up to 21 days ahead. They can also write an optional motivation message to themselves or import a backup.
+
+Once the start date is saved, the page shows the elapsed time, an encouraging quote and milestone badges. A personal motivation message is displayed before the start and during the first week. The badges cover one day, five days, ten days, one month and one year. For a future start date, the page shows a countdown.
+
+The user can add quick notes and read their history. The page links to [Motivation and support](https://sobertoday.eu/motivation.html) and [Settings](https://sobertoday.eu/settings.html).
+
+## Motivation
+
+Source: https://sobertoday.eu/motivation.html
+
+### Ride the wave!
+
+A craving is like a wave. It builds up, reaches a peak, and **will always subside**. Here are some things you can do to ride it out:
+
+- **Hold your wrists under cold water:** Do this for 15 seconds. The cold shock "resets" your nervous system and interrupts racing thoughts.
+- **Go for a walk:** Fresh air and a change of scenery give your brain something else to focus on.
+- **Drink water:** Try adding electrolytes. Your body often confuses thirst with cravings.
+- **Delay the decision for 15 minutes:** Tell yourself: "I will wait 15 minutes before I decide." The craving is often much weaker afterwards.
+- **Check HALT:** Are you actually Hungry, Angry, Lonely or Tired? Try to meet that need first.
+- **Find sober communities.** There are many ways to connect with sober communities.
+- **Reflect:** What can you focus on right now to help you stay sober for the rest of the day?
+
+#### Your body thanks you
+
+- **Fat burning is put on hold:** When you drink alcohol, your body treats it as a toxin that needs to be removed immediately. To do this, it puts other fuel burning, including fat burning, on hold. Because your body wants to get rid of the alcohol as quickly as possible, it converts it to acetate (a type of acid). Your body then has to use this as energy instead of burning the food you have eaten.
+- **Empty calories:** Alcohol contains almost as many calories per gram as pure fat, but gives your body none of the nutrients it needs. These are liquid, "empty" calories that often end up around your waist. Alcohol also lowers your blood sugar, which is why drinking often leads to strong cravings for salty, fatty food — the classic late-night meal.
+- **And everything else:** Hangovers, nausea, hangover anxiety, lost days, the morning after, high blood pressure, impaired thinking and mental wellbeing, reduced impulse control, accidents and cancer...
+
+[🎉 Social survival guide](https://sobertoday.eu/social.html) [🔙 Back to My page](https://sobertoday.eu/dashboard.html)
+
+## Social survival guide
+
+Source: https://sobertoday.eu/social.html
+
+### Social survival guide
+
+Replacing the ritual of drinking and having a clear plan for social situations are often the keys to a good evening.
+
+#### Smart alcohol-free alternatives
+
+Much of the craving comes from the habit of holding a glass and enjoying a drink with a bit of bite.
+
+- **Ginger beer:** The sharp ginger gives a satisfying kick in your throat, similar to alcohol, so you naturally drink it more slowly.
+- **Kombucha:** Fermented tea with a tangy, lightly sparkling and grown-up taste. It feels like a proper alternative to wine or cider.
+- **Alcohol-free beer:** The range of alcohol-free beers has grown dramatically. Many now taste almost identical to regular beer, especially wheat beers and IPAs.
+- **Club soda with lime:** A classic on a night out. It looks like a gin and tonic, so nobody asks questions.
+
+#### How to handle a night out
+
+- **ALWAYS have a glass in your hand:** The easiest way to avoid pressure to drink. If you already have a club soda or an alcohol-free beer, people are less likely to offer to get you a drink.
+- **Have an excuse ready:** You do not owe anyone an explanation, but discussing it can be tiring at first. A little white lie is fine: "I am driving", "I am on medication", or "I have to be up early tomorrow."
+- **Find an ally:** Tell at least one friend that you are staying sober tonight, ideally before you meet up. Having someone on your side is invaluable if anyone starts being pushy.
+- **Learn the Irish goodbye:** You do not have to stay until the lights come on. When people get very drunk and start repeating themselves, it is perfectly fine to slip out and go home. Most people will not notice, and you will wake up feeling fresh and rested.
+
+[🔙 Back to My page](https://sobertoday.eu/dashboard.html)
+
+## Settings
+
+Source: https://sobertoday.eu/settings.html
+
+The page recommends regular exports because data is stored locally in the browser.
+
+- **Export data:** Downloads a JSON file with the start date, last check-in date, history and personal motivation message.
+- **Import data:** Reads a previous backup from a JSON file.
+- **Download reminder:** Downloads a [check-in calendar file](https://sobertoday.eu/reminder.ics). The default schedule is Wednesday, Friday and Saturday. The reminder is managed by the user's own calendar and can be edited there.
+- **Reset sober days:** Removes the start date and personal motivation message so that a new start can be recorded. History and notes are kept.
+- **Delete all data:** Clears the website's localStorage after confirmation. This cannot be undone without a backup.
+
+A button returns to [My page](https://sobertoday.eu/dashboard.html).
+
+## About Sober Today
+
+Source: https://sobertoday.eu/about.html
+
+[**Sober Today**](https://sobertoday.eu/) is a free, accessible self-help tool for reflection, notes and keeping track of sober days. You do not need an account, and there is no tracking. Your data is stored locally on your device.
+
+### Who is Sober Today for?
+
+Sober Today is for anyone who wants to change their relationship with alcohol. Perhaps you want a break, perhaps you want to be sober today, or perhaps you want to better understand which situations, thoughts and choices make it easier to avoid drinking.
+
+You do not have to make a decision for the rest of your life. The idea is simpler: to give you a place to follow your own progress, write down what matters to you and learn from what works.
+
+Sober Today is a self-help tool and does not replace medical treatment or professional support. If you need more support, you can use it alongside help from your doctor, a healthcare professional, a counsellor, an organisation or someone you trust.
+
+### A place for your thoughts
+
+Sober Today counts your sober days. You can start today, choose an earlier date or set a future date if you want to plan when to begin. Along the way, you can write notes and reflect on why you want alcohol-free days, how you feel and what you want to remember from your journey.
+
+You will find a [motivation page](https://sobertoday.eu/motivation.html) with practical tips and a [social survival guide](https://sobertoday.eu/social.html).
+
+### A setback does not undo your journey
+
+Imagine taking a long walk and making a detour along the way. The detour does not mean the whole walk was wasted. You still walked all the miles that came before.
+
+The same applies here. If you drink again after a period of sober days, you do not have to erase what you have already done or learned. In Settings, you can reset your sober day counter while keeping your history and notes.
+
+You are not starting from scratch. You are continuing with the experience you have already gained.
+
+### Private and without tracking
+
+The idea behind the project is simple: a self-help tool should support you without monitoring you. You do not need an account or have to tell us who you are.
+
+- **No registration:** You do not need to create an account.
+- **No tracking:** We do not monitor your activity or build a profile of you.
+- **Local storage:** Your journal entries are stored locally on your own phone or computer using localStorage. You own your data and can delete it with one click.
+- **You decide:** You can export, import or delete your data yourself.
+
+Because your data is stored locally in your browser, use the same browser and device to see the same history. You can also export a backup from Settings.
+
+#### How is your data stored?
+
+Sober Today uses [**localStorage**](https://en.wikipedia.org/wiki/Web_storage#localStorage), which is part of your browser’s Web Storage technology. It allows the website to store information directly in the browser on your device. Data in localStorage usually remains when you close and reopen your browser, and is not automatically sent to the server.
+
+Storage is tied to your browser and the sobertoday.eu website. Your notes do not automatically follow you if you switch browsers or devices. Clearing your browser data may also remove data in localStorage. We therefore recommend exporting a backup regularly from Settings.
+
+### Reminders without email or push notifications
+
+If you would like a check-in reminder, you can download a simple calendar file (.ics). The reminder lives in your own calendar. Sober Today does not need your email address or send you push notifications.
+
+- **You choose the name:** Rename the calendar event to something that suits you.
+- **You choose the frequency:** Daily, weekly or whenever works for you.
+- **You stay in control:** Your calendar manages the reminder, rather than Sober Today.
+
+**Important:** Stopping alcohol suddenly can sometimes be dangerous. If you are unsure whether you are physically dependent or are experiencing severe withdrawal symptoms, contact your doctor, an urgent care service or another healthcare professional for guidance and safe support.
+
+### About the project
+
+Sober Today is designed to be easy to use, with no login and no personal notes sent to a central account or cloud service.
+
+This app originated in Norway and was translated to English by Codex.
+
+The app was coded with Gemini 3.1 Pro, ChatGPT-6 Sol and Copilot.
+
+### Last but not least
+
+I do not know you, but I am cheering you on.  
+And I wish you all the best on your journey.
+
+### Do you have suggestions for improvements?
+
+The contact form has fields for "Name (or nickname)" and "Message", and a "Send message" button. Both fields are required. See the clarification about the contact form and server storage at the top of this file.

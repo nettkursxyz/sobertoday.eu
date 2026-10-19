@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sober Today - Settings</title>
+    <link rel="canonical" href="https://sobertoday.eu/settings.html">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍀</text></svg>">
+    <link rel="stylesheet" href="sobertoday.css">
+</head>
+<body>
+
+    <div class="container">
+	<img src="images/sobertoday_logo.webp" alt="Sober Today logo" class="logo" onerror="this.style.display='none'">
+        
+        <h2>Settings</h2>
+	
+        <h3>Your data is stored locally on your device. Export a backup regularly.</h3>
+        
+        <button id="btn-export" class="btn btn-green">💾 Export data</button>
+        <p class="settings-desc">Save your history and sober days to a file on your device.</p>
+
+        <button id="btn-import" class="btn btn-green">📂 Import data</button>
+        <p class="settings-desc">Restore your data from a previous backup.</p>
+
+        <a href="reminder.ics" download="reminder.ics" class="btn btn-green">⏰ Download reminder</a>
+        <p class="settings-desc">Add a check-in reminder to your calendar.</p>
+        
+        <button id="btn-reset-counter" class="btn btn-gray">🔄 Reset sober days</button>
+        <p class="settings-desc">Start counting again. Your history and notes are kept.</p>
+
+        <button id="btn-reset" class="btn btn-red">⚠️ Delete all data</button>
+        <p class="settings-desc">Delete your days, history and notes. This cannot be undone!</p>
+
+        <a href="dashboard.html" class="btn btn-gray">🔙 Back to My page</a>
+
+        <input type="file" id="file-input" accept=".json" style="display: none;">
+    </div>
+
+    <div class="footer">
+        <a href="about.html" target="_blank">About the app</a>
+    </div>
+
+    <script src="sobertoday.js"></script>
+</body>
+</html>

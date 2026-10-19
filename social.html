@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social survival guide - Sober Today</title>
+    <link rel="canonical" href="https://sobertoday.eu/social.html">
+    
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4CAF50">
+    <link rel="apple-touch-icon" href="images/icon-192.png">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍀</text></svg>">
+    <link rel="stylesheet" href="sobertoday.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="images/sobertoday_logo.webp" alt="Sober Today logo" class="logo" onerror="this.style.display='none'">
+        
+        <h2>Social survival guide</h2>
+        
+        <p style="color: #666; font-size: 0.95rem; margin-bottom: 20px;">
+            Replacing the ritual of drinking and having a clear plan for social situations are often the keys to a good evening.
+        </p>
+        
+        <h3>Smart alcohol-free alternatives</h3>
+        <p class="settings-desc">Much of the craving comes from the habit of holding a glass and enjoying a drink with a bit of bite.</p>
+        
+        <ul class="tips-list">
+            <li><strong>Ginger beer:</strong> The sharp ginger gives a satisfying kick in your throat, similar to alcohol, so you naturally drink it more slowly.</li>
+            <li><strong>Kombucha:</strong> Fermented tea with a tangy, lightly sparkling and grown-up taste. It feels like a proper alternative to wine or cider.</li>
+            <li><strong>Alcohol-free beer:</strong> The range of alcohol-free beers has grown dramatically. Many now taste almost identical to regular beer, especially wheat beers and IPAs.</li>
+            <li><strong>Club soda with lime:</strong> A classic on a night out. It looks like a gin and tonic, so nobody asks questions.</li>
+        </ul>
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
+        <h3>How to handle a night out</h3>
+        <ul class="tips-list">
+            <li><strong>ALWAYS have a glass in your hand:</strong> The easiest way to avoid pressure to drink. If you already have a club soda or an alcohol-free beer, people are less likely to offer to get you a drink.</li>
+            <li><strong>Have an excuse ready:</strong> You do not owe anyone an explanation, but discussing it can be tiring at first. A little white lie is fine: "I am driving", "I am on medication", or "I have to be up early tomorrow."</li>
+            <li><strong>Find an ally:</strong> Tell at least one friend that you are staying sober tonight, ideally before you meet up. Having someone on your side is invaluable if anyone starts being pushy.</li>
+            <li><strong>Learn the Irish goodbye:</strong> You do not have to stay until the lights come on. When people get very drunk and start repeating themselves, it is perfectly fine to slip out and go home. Most people will not notice, and you will wake up feeling fresh and rested.</li>
+        </ul>
+
+        <a href="dashboard.html" class="btn btn-gray" style="margin-top: 30px;">🔙 Back to My page</a>
+    </div>
+
+    <div class="footer">
+        <a href="about.html" target="_blank">About the app</a>
+    </div>
+
+    <script src="sobertoday.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .catch(err => console.log('Service Worker feilet', err));
+            });
+        }
+    </script>
+</body>
+</html>

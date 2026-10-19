@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page</title>
+    <link rel="canonical" href="https://sobertoday.eu/dashboard.html">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍀</text></svg>">
+    <link rel="stylesheet" href="sobertoday.css">
+</head>
+<body>
+
+    <div class="container">
+	<img src="images/sobertoday_logo.webp" alt="Sober Today logo" class="logo" onerror="this.style.display='none'">
+        <div id="setup-date">
+            <h2>Welcome!</h2>
+            <p>To count accurately, we need to know when your journey starts.</p>
+            <label style="display: block; text-align: left; font-size: 0.9rem;">Date and time:</label>
+            <div class="input-group">
+                <input type="date" id="start-date-input">
+                <input type="time" id="start-time-input">
+            </div>
+            
+            <label style="display: block; text-align: left; font-size: 0.9rem; margin-top: 15px;">Why are you making this choice? (An optional message to yourself)</label>
+            <textarea id="motivation-input" placeholder="For example: I am doing this to have more energy, sleep better and be more present..."></textarea>
+            
+            <button id="save-date-btn" class="btn btn-green">Save start date</button>
+            <br><hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+            <p style="font-size: 0.9rem; color: #666;">Have you used the app before?</p>
+            <button id="btn-import-setup" class="btn btn-green">📂 Import data</button>
+            <input type="file" id="file-input-setup" accept=".json" style="display: none;">
+        </div>
+
+        <div id="dashboard">
+            <!-- Her er elementene som manglet! -->
+            <h1 id="success-title" class="success-title">Loading...</h1>
+            <p class="stats">You have now been sober for</p>
+            
+            <div class="time-count" id="time-display"></div>
+            
+            <!-- Visning av egen motivasjonsbeskjed -->
+            <div id="personal-motivation-box" style="display: none; background: #e8f5e9; padding: 15px; border-radius: 5px; margin-bottom: 20px; border-left: 5px solid #4CAF50; font-style: italic; color: #333;">
+                "<span id="personal-motivation-text"></span>"
+            </div>
+<img id="badge-display" class="badge" src="" alt="Milestone badge">
+            <p id="badge-text" style="font-style: italic; color: #555; margin-bottom: 2rem;"></p>
+            <!-- Slutt på elementene som manglet -->
+
+            <!-- NYTT ELEMENT FOR DAGENS SITAT -->
+            <p id="quoteText" style="font-size: 1.05rem; font-weight: 500; color: #1b5e20; text-align: center; margin-bottom: 25px; padding: 15px; background-color: #e8f5e9; border-radius: 8px; border-left: 4px solid #4CAF50; line-height: 1.4;"></p>
+
+            <a href="motivation.html" class="btn btn-green" style="margin-bottom: 15px;">💪 Motivation and support</a>
+            <a href="settings.html" class="btn btn-gray">⚙️ Settings</a>            
+
+            <!-- Nytt felt for raske notater -->
+            <div class="quick-note-container">
+                <h3>Add a note</h3>
+                <textarea id="quick-note-entry" placeholder="Write down a thought, a win or something you want to remember..." style="height: 70px;"></textarea>
+                <button id="quick-note-btn" class="btn btn-green" style="margin-top: 5px;">Save note</button>
+            </div>
+
+            <div id="history-wrapper">
+                <h3 style="text-align: center; margin-bottom: 15px; color: #333;">Your history</h3>
+                <div id="history-section"></div>
+                <div id="pagination-controls" style="display: none;">
+                    <button id="btn-prev" class="btn btn-gray">Previous</button>
+                    <span id="page-info" style="font-size: 0.9rem;"></span>
+                    <button id="btn-next" class="btn btn-gray">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="about.html" target="_blank">About the app</a>
+    </div>
+
+    <script src="sobertoday.js"></script>
+</body>
+</html>

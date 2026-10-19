@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sober Today - Free and anonymous sober day tracking</title>
+    <link rel="canonical" href="https://sobertoday.eu/">
+    <meta name="theme-color" content="#4CAF50">
+    <meta name="description" content="A tool for reflection, inspiration and sober days. Free, with no registration or tracking.">
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sobertoday.eu/">
+    <meta property="og:title" content="A tool for reflection, inspiration and sober days">
+    <meta property="og:description" content="A tool for reflection, inspiration and sober days. Free, with no registration or tracking.">
+    <meta property="og:image" content="https://sobertoday.eu/images/sobertoday_logo.webp">
+    <meta property="og:image:width" content="1254">
+    <meta property="og:image:height" content="1254">
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://sobertoday.eu/">
+    <meta name="twitter:title" content="A tool for reflection, inspiration and sober days">
+    <meta name="twitter:description" content="A tool for reflection, inspiration and sober days. Free, with no registration or tracking.">
+    <meta name="twitter:image" content="https://sobertoday.eu/images/sobertoday_logo.webp">
+    <link rel="icon" href="/images/icon-192.png" sizes="192x192">
+    <link rel="stylesheet" href="sobertoday.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/icon-192.png">
+</head>
+<body>
+<h1 class="page-title">
+  A free tool for reflection, notes and sober days
+    <a href="https://sobertoday.eu/about.html"
+       target="_blank"
+       rel="noopener noreferrer">
+        Learn more
+    </a>
+</h1>
+    <div class="container" id="checkin-container">
+	<img src="images/sobertoday_logo.webp" alt="Sober Today logo" class="logo" onerror="this.style.display='none'">
+        
+        <h2>How are you feeling today?</h2>
+        
+        <div class="mood-scale" id="mood-scale">
+            <div class="mood-option" data-mood="1">😠</div>
+            <div class="mood-option" data-mood="2">😟</div>
+            <div class="mood-option" data-mood="3">😐</div>
+            <div class="mood-option" data-mood="4">🙂</div>
+            <div class="mood-option" data-mood="5">🤩</div>
+        </div>
+
+        <textarea id="journal-entry" placeholder="What do alcohol-free days mean to you? Write a few words to yourself (optional)..."></textarea>
+        
+        <button id="submit-btn" class="btn btn-green">Check in</button>
+        
+        <!-- Historikk på forsiden -->
+        <div id="history-wrapper">
+            <h3 style="text-align: center; margin-bottom: 15px; color: #333;">Your history</h3>
+            <div id="history-section"></div>
+            <div id="pagination-controls" style="display: none;">
+                <button id="btn-prev" class="btn btn-gray">Previous</button>
+                <span id="page-info" style="font-size: 0.9rem;"></span>
+                <button id="btn-next" class="btn btn-gray">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="about.html" target="_blank">About the app</a>
+    </div>
+
+    <script src="sobertoday.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('Service Worker registrert', reg))
+                    .catch(err => console.log('Service Worker feilet', err));
+            });
+        }
+    </script>
+</body>
+</html>

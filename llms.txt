@@ -1,0 +1,26 @@
+# Sober Today
+> A tool for reflection, inspiration and sober days. Free, with no registration or tracking.
+
+## About the service
+Sobertoday.eu is a self-help tool based on the principle that support should not require surveillance. Mood history, personal notes and the start date are stored locally in the user's browser using localStorage.
+- No registration: No user account is required.
+- No activity tracking or central account for journal entries.
+- The contact form is separate: A name or nickname and a message are sent to the server when the user submits the form. The server also stores the IP address, timestamp and browser information for the submission.
+- Core features: Mood logging, a journal, a sober day counter with milestone badges, motivation tips and a social survival guide.
+
+## Technical stack
+- HTML, CSS and vanilla JavaScript, with PHP for the contact form.
+- No external libraries, frameworks or cloud storage.
+- Graphics include WebP and SVG. A service worker caches selected pages for offline use; submitting the contact form requires an internet connection.
+
+## Pages
+- [Home / Check-in](https://sobertoday.eu/): Record your daily mood and notes.
+- [My page](https://sobertoday.eu/dashboard.html): A dashboard showing sober days, milestone badges and personal history.
+- [Motivation](https://sobertoday.eu/motivation.html): Practical tips for managing cravings, including riding the wave and HALT, and information about alcohol's effects on the body.
+- [About the app](https://sobertoday.eu/about.html): Privacy information, the contact form and the ideas behind the app.
+- [Settings](https://sobertoday.eu/settings.html): Export and import JSON backups, reset the sober day counter or delete all data.
+- [Social survival guide](https://sobertoday.eu/social.html): Tips on alcohol-free alternatives, pressure to drink and social situations.
+
+## Full content
+- [Full website text](https://sobertoday.eu/llms-full.txt): The information pages and descriptions of the interactive features.
+- [Sitemap](https://sobertoday.eu/sitemap.xml): An overview of the website's pages and text files.

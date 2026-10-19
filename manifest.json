@@ -1,0 +1,23 @@
+{
+  "name": "Sober Today",
+  "short_name": "Sober Today",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f4f4f9",
+  "theme_color": "#4CAF50",
+  "description": "A tool for reflection, inspiration and sober days. Free, with no registration or tracking.",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
